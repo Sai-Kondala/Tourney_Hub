@@ -1,0 +1,79 @@
+# Tourney Hub — Git Ignore Configuration
+
+# Dependencies
+node_modules/
+*/node_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Next.js & Build Outputs
+.next/
+*/.next/
+out/
+*/out/
+build/
+*/build/
+dist/
+*/dist/
+.turbo/
+*/.turbo/
+.cache/
+*/.cache/
+
+# Environment Variables & Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+
+# Testing & Coverage
+coverage/
+*/coverage/
+.nyc_output/
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# Debug Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE & Editor Settings
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# TypeScript Build Artifacts
+*.tsbuildinfo
+next-env.d.ts
+
+# Vercel Deployment
+.vercel/
